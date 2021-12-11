@@ -7,24 +7,24 @@ export const Footer = styled.footer`
 	color: #fff;
 	width: 100%;
 	heigth: 100%;
-	text-align: center;line-height: 100px;
+	text-align: center;line-height: 80px;
 `;	
 
 export const FooterLink = styled.a`
-color: #fff;
-margin-bottom: 20px;
-font-size: 18px;
-text-decoration: none;
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 18px;
+	text-decoration: none;
 
-&:hover {
-	color: green;
-	transition: 200ms ease-in;
-}
-`;
+	&:hover {
+		color: green;
+		transition: 200ms ease-in;
+	}
+	`;
 
 export const Heading = styled.p`
-font-size: 18px;
-color: #fff;
-margin-bottom: 40px;
-font-weight: bold;
-`;
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 40px;
+	font-weight: bold;
+	`;

@@ -1,0 +1,20 @@
+.produtos {
+    text-align: center;
+}
+.produtos h1 {
+    font-size: 35px;
+    padding: 20px;
+}
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 25px;
+    list-style: none;
+    text-align: start;
+    width: 100vw;
+    justify-content: center;
+    margin-right: 2rem;
+    margin: 10px;
+    padding: 15px;
+    
+}

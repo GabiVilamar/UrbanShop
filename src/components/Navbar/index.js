@@ -9,11 +9,11 @@ class Navbar extends Component {
     render() {
         return(
             <nav className="NavbarItems">
-                <h1 className = "navbar-logo">
-                    <img src={Logo}
-                        alt="logo" />
-                        <Link to="/"></Link>
-                    </h1>
+                  <Link to={`/`}>
+                <h1 className = "navbar-logo" >
+                  <img src={Logo}
+                      alt="logo" />
+                  </h1></Link>
                 <div className="menu-icon" onClick={this.handleClick}>
                 </div>
                 <ul className='nav-menu'>

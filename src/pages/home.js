@@ -4,11 +4,15 @@ import { Banner, LogoText, Section, Button, Footer } from '../Styled/homeCompone
 import Logo from '../images/urbanShop.svg';
 import Product1 from '../images/homeProduct1.svg';
 import Product2 from '../images/homeProduct2.svg';
+import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
 
 import '../estilosCss/home.css';
 
 
 function Home() {
+  const history = useHistory();
+  const goToShop = () => history.push('comprar');
+
   return (
     <div className="App">
       <Navbar/>
@@ -28,16 +32,17 @@ function Home() {
         <div className='textProduct'>
           <h3>Modelos Unissex</h3>
           <p>Seu estilo confortável para qualquer evento</p>
-        <Button> Compre agora</Button></div>
+        <Button onClick={goToShop}> Compre agora</Button>
+        </div>
       </Section>
       <Section>
-       <div className="textProduct2">
+       <div className="textProduct">
          <h3>Calças para todes</h3>
          <p>Seu estilo confortável para qualquer evento</p>
-         <Button> Compre agora</Button>
+         <Button onClick={goToShop}> Compre agora</Button>
+         </div>
         <img src={Product2}
              alt="Produto 2"/>
-       </div>
       </Section>
       </div>
       <Banner bottom />
